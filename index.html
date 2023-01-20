@@ -1,0 +1,55 @@
+<body>
+    // 
+    <h1>This is the heading 3445</h1>
+    <button> I am a button</button> <br>
+    <button> I am an another button</button></button>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">link me to google homepage</a>
+    <br>
+    <!-- <img src="https://www.foundationhealth.org/.api2/binaries/qpMu91I9Ni/thumbnails/anesthesiology.JPG"> -->
+    <br>
+    <div>
+        <!-- normal video or video from local -->
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> 
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        </video><br>
+        
+        <!-- conclusion: confined by the website, video cannot be played properly with this simple method -->
+        <!-- try to embedd youtube video into my webpage -->
+        <!-- searching with "how to play youtube video in html video tag"
+             then I fund the answer and sample code from W3school
+             here I learned an new tag "iframe", loads another html page within the current document,
+             So, from this point, I think this tag can solve the undisplayable problem from bilibili
+        -->
+        <!-- wrong way -->
+        <video controls height="240" width="460">
+            <source src="https://www.youtube.com/watch?v=5NgaS50hFpc&ab_channel=BabyRelaxChannel">
+        </video><br>
+        <!-- proper way to display video from youbute
+             more detail,including parameters could be found from w3school-->
+        <iframe 
+            height="240"
+            width="460"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">this is the video from youtube</iframe><br>
+
+        <!-- try to embedd video from bilibili -->
+         <!-- wrong way -->
+        <video controls height="240" width="460">
+            <source src="https://www.bilibili.com/video/BV18h411r7Z7?t=134.9">
+        </video><br>
+        <!-- the way i think should work properly
+            yes! it works!!! -->
+        <iframe
+            height="240"
+            width="460"
+            src="https://www.bilibili.com/video/BV18h411r7Z7?t=134.9">
+            video from bilibili
+        </iframe>
+    </div>
+    
+
+
+
+
+    <a>this is the end</a>
+</body>
