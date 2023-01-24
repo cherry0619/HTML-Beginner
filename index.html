@@ -58,13 +58,47 @@
         </style>
 
     <div>This part is mainly about the table in html<br>
-        <table>
+        <table >
             <thead>
                 <th>col1</th>
                 <th>col2</th>
                 <th>col3</th>
             </thead>
             <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Feburary</td>
+                    <td>200</td>
+                </tr>
+            </tbody >
+            <tfoot>
+                <tr>
+                    <td>sum</td>
+                    <td>100</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </div>
+
+
+    <!-- test the scope of the style -->
+    <div>This part is mainly about the table in html<br>
+        <!-- <style>
+            table,tr,td{border: 1px solid pink;}
+
+        </style> -->
+        <table style="border-collapse: collapse;">
+            <thead >
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+            </thead>
+            <tbody style="border-bottom: 1px solid pink;">
                 <tr>
                     <td>January</td>
                     <td>100</td>
@@ -85,8 +119,29 @@
 
     </div>
 
+     <!-- form tag -->
+     <div>
+        <br><br>
+        <a> Below part is a form, user should leave their massage if help is needed</a><br>
+        <form>
+            <label for="First-name">First Name <input type="text"></label><br>
+            <label for="last-name">Last Name <input type="text"></label><br>
+            <label for ="file type">file type <select name="problems" id="massage">
+                    <option value="photo">photo</option>
+                    <option value="audio">audio</option>
+                    <option value="scanned files">scanned files</option>
+                    <option value="video">video</option>
+                </select></label><br>
+            <label>Select a file <input type="file"><input type="submit"></label>
+        </form>
+     </div>
 
 
-
+     <!--  -->
+     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="c b"></output>
+      </form>
     <a>this is the end</a>
 </body>
